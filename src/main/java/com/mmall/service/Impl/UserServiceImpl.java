@@ -150,7 +150,7 @@ public class UserServiceImpl implements IUserService {
 
     }
 
-    @Override
+
     public ServerResponse<String> resetPassword(String passwordOld, String passwordNew, User user) {
         // 防止横向越权，要校验一下这个用户的旧密码，一定要指定是这个用户
         // 因此我们会查询一个count(1)，如果不指定id， 那么结果就是true啦count > 0
@@ -165,5 +165,28 @@ public class UserServiceImpl implements IUserService {
             return ServerResponse.createBySuccessMessage("密码更新成功");
         }
         return ServerResponse.createByErrorMessage("密码更新失败");
+    }
+
+
+
+    public ServerResponse<User> updateInformation(User user) {
+        // username不能被更新
+        // email也要进行一个校验，校验新的email是不是已存在，并且存在的email如果相同的话不能是我们当前这个用户的
+        int resultCount = userMapper.checkEmailByUserId(user.getEmail(), user.getId());
+        if (resultCount > 0) {
+            return ServerResponse.createByErrorMessage("email已经存在");
+        }
+        User updateUser = new User();
+        updateUser.setId(user.getId());
+        updateUser.setEmail(user.getEmail());
+        updateUser.setPhone(user.getPhone());
+        updateUser.setQuestion(user.getQuestion());
+        updateUser.setAnswer(user.getAnswer());
+
+        int updateCount = userMapper.updateByPrimaryKeySelective(updateUser);
+        if (updateCount > 0) {
+            return ServerResponse.createBySuccess("更新个人信息成功", updateUser);
+        }
+        return ServerResponse.createByErrorMessage("更新个人信息失败");
     }
 }

@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/controller/backend/CategoryManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/backend/CategoryManageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/dao/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/CategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/service/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/ICategoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" afterDir="false" />
@@ -42,52 +43,43 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="22" />
+          <entry key="java" value="23" />
           <entry key="properties" value="4" />
-          <entry key="xml" value="29" />
+          <entry key="xml" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="22" />
+          <entry key="JAVA" value="23" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="4" />
-          <entry key="XML" value="29" />
+          <entry key="XML" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="2" />
           <entry key="gitignore" value="270" />
-          <entry key="java" value="8766" />
+          <entry key="java" value="9380" />
           <entry key="properties" value="194" />
-          <entry key="xml" value="830" />
+          <entry key="xml" value="832" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8766" />
+          <entry key="JAVA" value="9380" />
           <entry key="PLAIN_TEXT" value="270" />
           <entry key="Properties" value="194" />
           <entry key="SQL" value="22" />
           <entry key="VTL" value="2" />
-          <entry key="XML" value="808" />
+          <entry key="XML" value="810" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/util/MD5Util.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" selection-start-line="41" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/backend/UserManageController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/backend/CategoryManageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="68" column="53" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="53" />
+            <state relative-caret-position="266">
+              <caret line="103" column="66" selection-start-line="103" selection-start-column="66" selection-end-line="103" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/ICategoryService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="362">
+              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,8 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/dao/CategoryMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="255">
+              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,11 +152,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="121" column="40" lean-forward="true" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/CategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+            <state relative-caret-position="168">
+              <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -228,11 +229,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmall/controller/backend/CategoryManageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/ICategoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/dao/CategoryMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/ICategoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmall/controller/backend/CategoryManageController.java" />
       </list>
     </option>
   </component>
@@ -272,7 +274,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-48" />
+    <option name="x" value="-30" />
     <option name="y" value="-1039" />
     <option name="width" value="1702" />
     <option name="height" value="915" />
@@ -464,7 +466,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545077522956" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545081783799" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -686,12 +688,12 @@
       <workItem from="1544898976288" duration="6351000" />
       <workItem from="1544914373488" duration="2333000" />
       <workItem from="1544997501732" duration="14964000" />
-      <workItem from="1545075085160" duration="2276000" />
+      <workItem from="1545075085160" duration="3611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26608000" />
+    <option name="totallyTimeSpent" value="27943000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -703,7 +705,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-48" y="-1039" width="1702" height="915" extended-state="0" />
+    <frame x="-30" y="-1039" width="1702" height="915" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1746988" />
@@ -1030,26 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/ICategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/backend/CategoryManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="68" column="53" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="654">
@@ -1060,27 +1042,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="119" column="2" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/dao/CategoryMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="255">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="121" column="40" lean-forward="true" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/pojo/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="92" column="37" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2073#2074#0" expanded="true" />
+            <element signature="e#2112#2113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/CategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+        <state relative-caret-position="168">
+          <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/ICategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/backend/CategoryManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="103" column="66" selection-start-line="103" selection-start-column="66" selection-end-line="103" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

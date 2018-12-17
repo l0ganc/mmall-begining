@@ -1,5 +1,7 @@
 package com.mmall.service.Impl;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import com.mmall.common.ServerResponse;
 import com.mmall.dao.CategoryMapper;
 import com.mmall.pojo.Category;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author logan
@@ -70,5 +73,35 @@ public class CategoryServiceImpl implements ICategoryService {
         }
 
         return ServerResponse.createBySuccess(categoryList);
+    }
+
+
+    // 递归查询本节点的id及孩子节点的id
+    public ServerResponse selectCategoryAndChildrenById(Integer categoryId) {
+        Set<Category> categorySet = Sets.newHashSet();
+        findChildCategory(categorySet, categoryId);
+
+        List<Integer> categoryIdList = Lists.newArrayList();
+        if (categoryId != null) {
+            for (Category categoryItem : categorySet) {
+                categoryIdList.add(categoryItem.getId());
+            }
+        }
+        return ServerResponse.createBySuccess(categoryIdList);
+    }
+
+    //递归算法算出子节点
+    public Set<Category> findChildCategory(Set<Category> categorySet , Integer categoryId) {
+        Category category = categoryMapper.selectByPrimaryKey(categoryId);
+        if (category != null) {
+            categorySet.add(category);
+        }
+
+        // 查找子节点，递归算法一定要有一个退出条件
+        List<Category> categoryList = categoryMapper.selectCategoryChildrenByParentId(categoryId);
+        for (Category categoryItem : categoryList) {
+            findChildCategory(categorySet, categoryItem.getId());
+        }
+        return categorySet;
     }
 }

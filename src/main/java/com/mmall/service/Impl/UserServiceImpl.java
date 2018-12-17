@@ -39,16 +39,11 @@ public class UserServiceImpl implements IUserService {
         }
 
         user.setPassword(StringUtils.EMPTY);
-        return ServerResponse.createByErrorMessage("登录成功");
+        return ServerResponse.createBySuccess("登录成功", user);
 
     }
 
     public ServerResponse<String> register(User user) {
-        int resultCount = userMapper.checkUsername(user.getUsername());
-        if (resultCount > 0) {
-            return ServerResponse.createByErrorMessage("用户名已存在");
-        }
-
         ServerResponse validResponse = this.checkValid(user.getUsername(), Const.USERNAME);
         if (!validResponse.isSuccess()) {
             return validResponse;
@@ -61,7 +56,7 @@ public class UserServiceImpl implements IUserService {
         user.setRole(Const.Role.ROLE_CUSTOMER);
         // MD5加密
         user.setPassword(MD5Util.MD5EncodeUtf8(user.getPassword()));
-        resultCount = userMapper.insert(user);
+        int resultCount = userMapper.insert(user);
         if (resultCount == 0) {
             return ServerResponse.createByErrorMessage("注册失败");
         }
@@ -87,7 +82,7 @@ public class UserServiceImpl implements IUserService {
         } else {
             return ServerResponse.createByErrorMessage("参数错误");
         }
-        return ServerResponse.createByErrorMessage("校验成功");
+        return ServerResponse.createBySuccessMessage("校验成功");
     }
 
 
@@ -98,7 +93,7 @@ public class UserServiceImpl implements IUserService {
             return ServerResponse.createByErrorMessage("用户不存在");
         }
         String question = userMapper.selectQuestionByUsername(username);
-        if (StringUtils.isNoneBlank(question)) {
+        if (StringUtils.isNotBlank(question)) {
             return ServerResponse.createBySuccess(question);
         }
 
@@ -198,5 +193,14 @@ public class UserServiceImpl implements IUserService {
         }
         user.setPassword(StringUtils.EMPTY);
         return ServerResponse.createBySuccess(user);
+    }
+
+
+    // backend
+    public ServerResponse checkAdminRole(User user) {
+        if (user != null && user.getRole().intValue() == Const.Role.ROLE_ADMIN) {
+            return ServerResponse.createBySuccess();
+        }
+        return ServerResponse.createByError();
     }
 }

@@ -1,6 +1,6 @@
 package com.mmall.service;
 
-import org.springframework.web.multipart.MultipartFile;package com.mmall.service;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * @author logan

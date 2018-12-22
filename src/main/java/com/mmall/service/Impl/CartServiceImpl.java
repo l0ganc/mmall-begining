@@ -16,6 +16,8 @@ import com.mmall.vo.CartVo;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -51,6 +53,20 @@ public class CartServiceImpl implements ICartService {
             cartMapper.updateByPrimaryKeySelective(cart);
         }
         CartVo cartVo = this.getCartVoLimit(userId);
+        return ServerResponse.createBySuccess(cartVo);
+    }
+
+    public ServerResponse<CartVo> update(Integer userId, Integer productId, Integer count) {
+        if (productId == null || count == null) {
+            return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(), ResponseCode.ILLEGAL_ARGUMENT.getDesc());
+        }
+        Cart cart = cartMapper.selectCartByUserIdProductId(userId,productId);
+        if(cart != null){
+            cart.setQuantity(count);
+        }
+        cartMapper.updateByPrimaryKey(cart);
+        CartVo cartVo = this.getCartVoLimit(userId);
+
         return ServerResponse.createBySuccess(cartVo);
     }
 
@@ -122,5 +138,9 @@ public class CartServiceImpl implements ICartService {
         }
         return cartMapper.selectCartProductCheckedStatusByUserId(userId) == 0;
     }
+
+
+
+
 
 }

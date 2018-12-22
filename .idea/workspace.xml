@@ -7,21 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b877f58-fd80-41db-8409-50299c59c00f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/ICartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/vo/CartVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mmall.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmall.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/common/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/common/Const.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/dao/CartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/CartMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/CartServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/CartServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="35" column="137" selection-start-line="35" selection-start-column="137" selection-end-line="35" selection-end-column="137" />
+            <state relative-caret-position="542">
+              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/CartController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="449">
+              <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -326,7 +314,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545521570259" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545522026086" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -567,7 +555,7 @@
       <workItem from="1545510742578" duration="1988000" />
       <workItem from="1545513304268" duration="61000" />
       <workItem from="1545513387516" duration="135000" />
-      <workItem from="1545513546734" duration="3782000" />
+      <workItem from="1545513546734" duration="4104000" />
     </task>
     <servers />
   </component>
@@ -583,13 +571,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6012000" />
+    <option name="totallyTimeSpent" value="6334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12881564" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12881564" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -599,7 +587,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36632654" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36632654" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -607,7 +595,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50061053" side_tool="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3297362" />
       <window_info anchor="bottom" id="Spring" order="13" />
@@ -726,15 +714,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        <state relative-caret-position="449">
+          <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/Impl/CartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="35" column="137" selection-start-line="35" selection-start-column="137" selection-end-line="35" selection-end-column="137" />
+        <state relative-caret-position="542">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -132,7 +132,18 @@
     where user_id = #{userId,jdbcType=INTEGER}
   </select>
 
-  <select id="selectCartProductCheckedStatusByUserId">
+  <select id="selectCartProductCheckedStatusByUserId" resultType="int" parameterType="int">
     select count(1) from mmall_cart where checked = 0 and user_id = #{userId,jdbcType=INTEGER}
   </select>
+
+  <delete id="deleteByUserIdProductIds" parameterType="map">
+    delete from mmall_cart
+    where user_id = #{userId,jdbcType=INTEGER}
+    <if test="productIdList != null">
+      and product_id in
+      <foreach collection="productIdList" item="item" index="index" open="(" separator="," close=")">
+        #{item}
+      </foreach>
+    </if>
+  </delete>
 </mapper>

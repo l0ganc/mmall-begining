@@ -177,20 +177,4 @@
         where user_id = #{userId}
         and checked = 1
     </select>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </mapper>

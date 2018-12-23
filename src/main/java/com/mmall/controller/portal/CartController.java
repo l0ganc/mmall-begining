@@ -67,5 +67,33 @@ public class CartController {
         return iCartService.deleteProduct(user.getId(),productIds);
     }
 
+    // 全选
+    @RequestMapping("select_all.do")
+    @ResponseBody
+    public ServerResponse<CartVo> selectAll(HttpSession session) {
+        User user = (User) session.getAttribute(Const.CURRENT_USER);
+        if (user == null) {
+            return ServerResponse.createByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), ResponseCode.NEED_LOGIN.getDesc());
+        }
+        return iCartService.selectOrUnselectAll(user.getId(), Const.Cart.CHECKED);
+    }
+
+    // 全反选
+    @RequestMapping("un_select_all.do")
+    @ResponseBody
+    public ServerResponse<CartVo> unSelectAll(HttpSession session) {
+        User user = (User) session.getAttribute(Const.CURRENT_USER);
+        if (user == null) {
+            return ServerResponse.createByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), ResponseCode.NEED_LOGIN.getDesc());
+        }
+        return iCartService.selectOrUnselectAll(user.getId(), Const.Cart.UNCHECKED);
+    }
+
+
+    // 单独选
+    // 单独反选
+
+
+    // 查询当前用户的购物车里面的产品数量， 如果一个产品有10个，那么数量就是10
 
 }

@@ -147,10 +147,13 @@
     </if>
   </delete>
 
-  <update id="checkedOrUncheckedAllProduct">
+  <update id="checkedOrUncheckedProduct">
     update mmall_cart
-    set checked = #{checked}
+    set checked = #{checked},
     update_time = now()
     where userId = #{userId}
+    <if test="productId != null">
+      and product_id = #{productId}
+    </if>
   </update>
 </mapper>

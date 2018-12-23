@@ -54,7 +54,7 @@
 
     <logger name="com.mmall.dao" level="DEBUG"/>
 
-    <!--<logger name="com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate" level="DEBUG" >-->
+    <!--<logger name="com.ibatis.sqlmap.engine.Impl.SqlMapClientDelegate" level="DEBUG" >-->
         <!--<appender-ref ref="console"/>-->
     <!--</logger>-->
 

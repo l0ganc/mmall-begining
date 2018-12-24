@@ -168,11 +168,17 @@
     select
     <include refid="Base_Column_List" />
     from mmall_order_item
-    where order_no = #{orderNo}
-    and user_id = #{userId}
+    where order_no = #{orderNo,jdbcType=BIGINT
+    and user_id = #{userId,jdbcType=INTEGER}
   </select>
 
 
+  <select id="getByOrderNo" parameterType="map" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from mmall_order_item
+    where order_no = #{orderNo,jdbcType=BIGINT
+  </select>
 
 
 

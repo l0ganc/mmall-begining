@@ -32,9 +32,9 @@ public class CartServiceImpl implements ICartService {
     @Autowired
     private ProductMapper productMapper;
 
-    public ServerResponse<CartVo> add(Integer userId,Integer productId,Integer count){
+    public ServerResponse<CartVo> add(Integer userId, Integer productId, Integer count){
         if(productId == null || count == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
+            return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(), ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }
 
 
@@ -57,9 +57,9 @@ public class CartServiceImpl implements ICartService {
         return this.list(userId);
     }
 
-    public ServerResponse<CartVo> update(Integer userId,Integer productId,Integer count){
+    public ServerResponse<CartVo> update(Integer userId, Integer productId, Integer count){
         if(productId == null || count == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
+            return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(), ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }
         Cart cart = cartMapper.selectCartByUserIdProductId(userId,productId);
         if(cart != null){
@@ -69,10 +69,10 @@ public class CartServiceImpl implements ICartService {
         return this.list(userId);
     }
 
-    public ServerResponse<CartVo> deleteProduct(Integer userId,String productIds){
+    public ServerResponse<CartVo> deleteProduct(Integer userId, String productIds){
         List<String> productList = Splitter.on(",").splitToList(productIds);
         if(CollectionUtils.isEmpty(productList)){
-            return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(),ResponseCode.ILLEGAL_ARGUMENT.getDesc());
+            return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(), ResponseCode.ILLEGAL_ARGUMENT.getDesc());
         }
         cartMapper.deleteByUserIdProductIds(userId,productList);
         return this.list(userId);
@@ -86,7 +86,7 @@ public class CartServiceImpl implements ICartService {
 
 
 
-    public ServerResponse<CartVo> selectOrUnSelect (Integer userId,Integer productId,Integer checked){
+    public ServerResponse<CartVo> selectOrUnSelect (Integer userId, Integer productId, Integer checked){
         cartMapper.checkedOrUncheckedProduct(userId,productId,checked);
         return this.list(userId);
     }

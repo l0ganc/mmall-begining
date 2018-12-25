@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * Created by logan
+ * Created by geely
  */
 public class OrderProductVo {
     private List<OrderItemVo> orderItemVoList;

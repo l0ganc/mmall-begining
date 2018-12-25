@@ -3,16 +3,16 @@ package com.mmall.vo;
 import java.math.BigDecimal;
 
 /**
- * @author logan
- * @create 2018-12-20 2:57 PM
+ * Created by geely
  */
 public class ProductDetailVo {
-    private Integer id;
+
+    private Integer  id;
     private Integer categoryId;
     private String name;
     private String subtitle;
     private String mainImage;
-    private String subImage;
+    private String subImages;
     private String detail;
     private BigDecimal price;
     private Integer stock;
@@ -20,9 +20,9 @@ public class ProductDetailVo {
     private String createTime;
     private String updateTime;
 
+
     private String imageHost;
     private Integer parentCategoryId;
-
 
     public Integer getId() {
         return id;
@@ -64,12 +64,12 @@ public class ProductDetailVo {
         this.mainImage = mainImage;
     }
 
-    public String getSubImage() {
-        return subImage;
+    public String getSubImages() {
+        return subImages;
     }
 
-    public void setSubImage(String subImage) {
-        this.subImage = subImage;
+    public void setSubImages(String subImages) {
+        this.subImages = subImages;
     }
 
     public String getDetail() {

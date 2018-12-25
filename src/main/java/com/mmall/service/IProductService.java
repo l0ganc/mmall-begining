@@ -6,21 +6,24 @@ import com.mmall.pojo.Product;
 import com.mmall.vo.ProductDetailVo;
 
 /**
- * @author logan
- * @create 2018-12-20 2:31 PM
+ * Created by geely
  */
 public interface IProductService {
+
     ServerResponse saveOrUpdateProduct(Product product);
 
     ServerResponse<String> setSaleStatus(Integer productId, Integer status);
 
     ServerResponse<ProductDetailVo> manageProductDetail(Integer productId);
 
-    public ServerResponse<PageInfo> getProductList(int pageNum, int pageSize);
+    ServerResponse<PageInfo> getProductList(int pageNum, int pageSize);
 
     ServerResponse<PageInfo> searchProduct(String productName, Integer productId, int pageNum, int pageSize);
 
     ServerResponse<ProductDetailVo> getProductDetail(Integer productId);
 
     ServerResponse<PageInfo> getProductByKeywordCategory(String keyword, Integer categoryId, int pageNum, int pageSize, String orderBy);
+
+
+
 }

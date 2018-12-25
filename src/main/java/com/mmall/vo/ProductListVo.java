@@ -3,17 +3,20 @@ package com.mmall.vo;
 import java.math.BigDecimal;
 
 /**
- * @author logan
- * @create 2018-12-20 4:05 PM
+ * Created by geely
  */
 public class ProductListVo {
+
     private Integer id;
     private Integer categoryId;
+
     private String name;
     private String subtitle;
     private String mainImage;
     private BigDecimal price;
+
     private Integer status;
+
     private String imageHost;
 
     public Integer getId() {

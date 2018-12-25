@@ -3,7 +3,7 @@ package com.mmall.vo;
 import java.math.BigDecimal;
 
 /**
- * Created by logan
+ * Created by geely
  */
 public class OrderItemVo {
 

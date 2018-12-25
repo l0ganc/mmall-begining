@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpSession;
 
 /**
- * @author logan
- * @create 2018-12-16 5:11 PM
+ * Created by geely
  */
+
 @Controller
 @RequestMapping("/manage/user")
 public class UserManageController {
@@ -23,19 +23,18 @@ public class UserManageController {
     @Autowired
     private IUserService iUserService;
 
-
-    @RequestMapping(value = "login.do", method = RequestMethod.POST)
+    @RequestMapping(value="login.do",method = RequestMethod.POST)
     @ResponseBody
-    public ServerResponse<User> login(String username, String password, HttpSession session) {
-
-        ServerResponse<User> response = iUserService.login(username, password);
-        if (response.isSuccess()) {
+    public ServerResponse<User> login(String username, String password, HttpSession session){
+        ServerResponse<User> response = iUserService.login(username,password);
+        if(response.isSuccess()){
             User user = response.getData();
-            if (user.getRole() == Const.Role.ROLE_ADMIN) {
-                session.setAttribute(Const.CURRENT_USER, user);
+            if(user.getRole() == Const.Role.ROLE_ADMIN){
+                //说明登录的是管理员
+                session.setAttribute(Const.CURRENT_USER,user);
                 return response;
-            } else {
-                return  ServerResponse.createByErrorMessage("不是管理员无法登录");
+            }else{
+                return ServerResponse.createByErrorMessage("不是管理员,无法登录");
             }
         }
         return response;

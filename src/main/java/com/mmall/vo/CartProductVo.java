@@ -1,13 +1,14 @@
 package com.mmall.vo;
 
 import java.math.BigDecimal;
-import java.util.Date;
 
 /**
- * @author logan
- * @create 2018-12-21 5:01 PM
+ * Created by geely
  */
 public class CartProductVo {
+
+//结合了产品和购物车的一个抽象对象
+
     private Integer id;
     private Integer userId;
     private Integer productId;
